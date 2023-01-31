@@ -36,7 +36,7 @@ jobs:
             type=edge,branch=$repo.default_branch
 
       - name: build+push
-        uses: docker/build-push-action@v3.2.0
+        uses: docker/build-push-action@v3.3.1
         with:
           platforms: linux/amd64,linux/arm64
           push: ${{ github.ref == 'refs/heads/main' }}
